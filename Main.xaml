@@ -1,0 +1,377 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1410.4,6469.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="72">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="55">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Bot to Scrapte the Home details From Zillow" sap:VirtualizedContainerService.HintSize="846.4,6404.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="Location">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">Florida</Literal>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="Extract_DT" />
+      <Variable x:TypeArguments="x:String" Name="StringDT" />
+      <Variable x:TypeArguments="sd:DataTable" Name="Filtered_DT" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Get Location input from the user" sap:VirtualizedContainerService.HintSize="784,241.6" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter US City Name" Title="Get Location">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[Location]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Using Chrome - To Access the Zillow.com" sap:VirtualizedContainerService.HintSize="784,1933.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsIncognito="True" OpenMode="Always" ScopeGuid="ba678309-0ede-4328-9a97-f9a5755a9249" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Process: To get the deatils for the City" sap:VirtualizedContainerService.HintSize="400,1716.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Typing the city name in the box" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="337.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="HardwareEvents" ScopeIdentifier="ba678309-0ede-4328-9a97-f9a5755a9249" Text="[Location + &quot;[k(enter)]&quot;]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.zillow.com/" DesignTimeRectangle="541, 478, 767, 87" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT search-box-input'" FullSelectorArgument="&lt;webctrl id='search-box-input' tag='INPUT' aria-role='combobox' /&gt;" FuzzySelectorArgument="&lt;webctrl id='search-box-input' tag='INPUT' aria-role='combobox' type='text' /&gt;" Guid="fafdce1c-61ef-4f71-a674-2d3f88a634dc" ImageBase64="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" InformativeScreenshot="af7bf990991a517ca5df8defe44c27a3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Zillow: Real Estate, Apartments, Mortgages &amp;amp; Home Values' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click Activity 'For sale'" sap:VirtualizedContainerService.HintSize="337.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ba678309-0ede-4328-9a97-f9a5755a9249" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.zillow.com/" DesignTimeRectangle="844, 605, 250, 55" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'For sale'" FullSelectorArgument="&lt;webctrl aaname='For sale' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='For sale' tag='BUTTON' type='' class='StyledButton-c11n-8-69-2__sc-wpcbcc-0 lebuee' check:innerText='For sale' /&gt;" Guid="20e5ca61-d34a-4e58-a5b8-1b6fc28a0f82" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAP4AAAA7CAYAAABbszdWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAaySURBVHhe7Z17iFRVHMcvRUT9UVFB0ftNQUH9FwQRPaiIngT9FxQRYS8fpKZZaWqh9tjUchOhMt2iDDFyfYQm1mZoaRJamFlmpZavQkUzv90P5x727u6MO5ozuzP3+4EfO3Pm3Me56+ec3znXvZO88KnUv1XqO08aslgatUx6caXUtEqasDqN7xwOR91F6i4O4zJO4zaO4zrOJ/3SFwMXhg/Hp5Unr5Va1kutm6S5aczb7HA46i1wF4dxGadxG8dxHecTXoxZITWvSStulDbsljGmgcBp3MZxXMf5hF6AgrYtodK0pdLVL0lHP5Z+2MfhcNRr4DAu4zTgOK7jfEIKQG8AA2ZIVzwvzfxG2rU3lBlj6hMcxmWcxm3AdZxPyP9JBegVqGDhjWkscBq3cRzXcT5h8g+kBPQOxpjGA7dxHHA+YeUPmA94tDemMcFtHAecT1j6BxYDjDGNS3Qc5y2+MQXB4htTQCy+MQXE4htTQCy+MQXE4htTQCy+MQXE4htTQCy+MQXE4htTQCy+MQXE4htTQCy+qRr790ub/5Y2bJN2+DFuvQqL30Ns3RmEKBeNIAptuGpc+Pc0/OOs0PQKLH4Pcc+UcJ3LRSOIYvF7L/xOwOLXmCj+OcOke9/qGo3wBCSL33ux+D1EFJ+fjYrF771Y/B7iYMTf96809UvpkhHSkY+E7U4fIo2dL+3ck1XK+H2HdOVY6c7mIN7b6XbUZZthH2WVSsB+2N/ZT0lHPBzqnzAg7OeLH7NKKXv+kT5YLl3bFD6nHud02UhpzqqwoBc5kPixTRc+G44X9/Hhio77MNWB3wlY/BpTqfiIRupPXeLYvu3CETw0cduurHIKC4NnpfKem04hEDn/nQij52SVOrF3n3Tf1FAHAU97Ujoj7SzYFinfXJJVTPltu3RRKit1Tx4onTm0/Xyo//7XWcWUcuLn2xSPd8qgcCxixGzLX2249mDxa0yl4iMdMiAVo3cU4rO1QRj2MWhmKIMoPtsc9ah0y2vSyl9DebkHqMZtqD9rZVaYgqBL1nXsWKAtzQDW/Zm9SSFbuPX1cC43vNp+nHLitywLxzrpCenztB2R6UtDOylf/ktWaKpCdNzi15goPiM4o2Y+SNVJ2RmJo1B3vRHe5xn3Sfjs4uHSpr9CWZSY8hsndJ0KlIJRnAyBbYbOCmn4wTKlLWyP6AgPpcTPt+nB6aEskq/ftDArNFWBawwWv8ZE8UsF4iIwMiM1ZaVEYOQ9rr90fJpqMzJDXnxG1kogi3iopePxOd72TiN9hI6BLGLiIun+dIpA2n7Ny2Hb7sTPt+ny0e13MWJwlyNf31QHrjFY/BoTxb9tUpA1H4z2yJWXmAW1ziA70pcTv9Q25SCtHzUndCRsS5CNMN/OZw0s4MXFwhjM9eM8vzvx8+d3oLD41YVrDBa/xlQyx8+n4KTSnTmc4kfoAN77qn0Bj4hrCMzrz38mlN09OZxfBFEp7078fJvIGDjfUhH3YaoD1x8sfo2pRHwWyVgso94D73Rd6Y7zam7Brd8aypDm/4gfoQPo827YT5R59rdhUY6sgGlGHm4V5utCKfG7a5OpDVx/sPg1phLxIa7qs9K9aE1WmPLzFunSkV0FOhTxSeUZzTtLOGlx2E9n8Y95XFrwfVYpZe0f0gVZJtCd+PDKgtJtirAOQMdjqge/E7D4NaZS8ZHn+myE5J43/4kHmZh/U4ZwiBc5FPHjNqcOlu5oDotsN01ov4/P3B/y9/BPTKXl3KlPBkDWQadQifid28S3t3LMmyeG9QLOhXMy1YNrDxa/xlQqPjAiD07n2fmFN4S5fZL0Uzry5zkU8flLweuawj7j/gmOh/T50Xf+aum8p9vrsA235X5IOx9W6ysRH2jTc60d20TQ2dAuzslUD641WPw6gJV+VvwZeauRCsf903kcSDymBPyd/eE4j7gvjslPz/lrg8U3poBYfGMKiMU3poBYfGMKiMU3poBYfGMKiMU3poBYfGMKiMU3poBYfGMKiMU3poBYfGMKiMU3poBYfGMKSAfxWzeFN/xNdLlnsBtj6hvcxnHA+aRlfXjDt7M0wpc2GmO6gts4DjifTF4rbdgtTVsaHofkUd+YxgKncRvHcR3nk/Gr06F/Y6gwYEaoQO/gDsCY+gaHcRmncRtwHeeTUcuk5jVSW/YcN3oFUgLmAywGOByO+gwcxmWcBhzHdZxPBi6UxqwIBfQGpALGmMYBp3Ebx3Ed55N+reEFvQApAPk/k39W/uamwdK/w+Gor8BdHMZlnMZtHMf1fq3Sf+lw9mecP8RQAAAAAElFTkSuQmCC" InformativeScreenshot="58d62062b5e284f2e1143bf22ff8cbe3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Zillow: Real Estate, Apartments, Mortgages &amp;amp; Home Values' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click Activity 'Home TypeChevron Down'" sap:VirtualizedContainerService.HintSize="337.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ba678309-0ede-4328-9a97-f9a5755a9249" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.zillow.com/ny/?searchQueryState=%7B%22pagination%22%3A%7B%7D%2C%22usersSearchTerm%22%3A%22NY%22%2C%22mapBounds%22%3A%7B%22west%22%3A-77.06706689415617%2C%22east%22%3A-68.43181298790618%2C%22south%22%3A40.50833642201896%2C%22north%22%3A45.16922710594813%7D%2C%22regionSelection%22%3A%5B%7B%22regionId%22%3A43%2C%22regionType%22%3A2%7D%5D%2C%22isMapVisible%22%3Atrue%2C%22filterState%22%3A%7B%22sort%22%3A%7B%22value%22%3A%22globalrelevanceex%22%7D%2C%22ah%22%3A%7B%22value%22%3Atrue%7D%7D%2C%22isListVisible%22%3Atrue%2C%22mapZoom%22%3A7%7D" DesignTimeRectangle="960, 248, 188, 46" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Home TypeChevron Down'" FullSelectorArgument="&lt;webctrl parentid='home-type' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='home-type' tag='BUTTON' type='' class='StyledButton-c11n-8-81-1__sc-wpcbcc-0 tWDFe DropdownButton-c11n-8-81-1__sc-i5s403-0 srp__sc-8414ml-3 fhEgzN DropdownPopper-c11n-8-81-1__sc-1vnow1h-0 bRUkCd' aaname='Home TypeChevron Down' check:innerText='Home Type' /&gt;" Guid="65f73e0a-a0fa-4708-8c3c-e98a6f771e64" ImageBase64="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" InformativeScreenshot="353e11d002fbef8ec189381b7a10d6d9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='NY Real Estate - New York Homes For Sale | Zillow' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NCheck Action="Check" DisplayName="Check/Uncheck Activity 'checked'" sap:VirtualizedContainerService.HintSize="337.6,157.6" sap2010:WorkflowViewState.IdRef="NCheck_1" ScopeIdentifier="ba678309-0ede-4328-9a97-f9a5755a9249" Version="V3">
+              <uix:NCheck.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.zillow.com/ny/?searchQueryState=%7B%22pagination%22%3A%7B%7D%2C%22usersSearchTerm%22%3A%22NY%22%2C%22mapBounds%22%3A%7B%22west%22%3A-77.06706689415617%2C%22east%22%3A-68.43181298790618%2C%22south%22%3A40.50833642201896%2C%22north%22%3A45.16922710594813%7D%2C%22regionSelection%22%3A%5B%7B%22regionId%22%3A43%2C%22regionType%22%3A2%7D%5D%2C%22isMapVisible%22%3Atrue%2C%22filterState%22%3A%7B%22sort%22%3A%7B%22value%22%3A%22globalrelevanceex%22%7D%2C%22ah%22%3A%7B%22value%22%3Atrue%7D%7D%2C%22isListVisible%22%3Atrue%2C%22mapZoom%22%3A7%7D" DesignTimeRectangle="983, 429, 25, 25" DesignTimeScaleFactor="1.25" ElementType="CheckBox" FriendlyName="'Checkbox'" FullSelectorArgument="&lt;webctrl id='home-type_isSingleFamily' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='home-type_isSingleFamily' tag='INPUT' type='checkbox' class='StyledFormControl-c11n-8-81-1__sc-18qgis1-0 bLBrGo StyledCheckbox-c11n-8-81-1__sc-xbn46a-0 kmalBC srp__k6yi1m-2 ktnymC' aaname='Houses ' /&gt;" Guid="f10d8ea2-5265-4ed0-b8fd-3dc98612b3c7" InformativeScreenshot="6b1211faca4bd81e0abea477d0363ba0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='NY Real Estate - New York Homes For Sale | Zillow' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="1008, 424, 85, 30" ElementType="Text" FriendlyName="'checked'" FullSelectorArgument="&lt;webctrl parentid='home-type-form' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='home-type-form' tag='LABEL' type='' class='StyledLabel-c11n-8-81-1__sc-qq9hfi-0 iojJxU short-label' aaname='Houses ' check:innerText='Houses' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFkAAAAiCAYAAAA07nWtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAQeSURBVGhD7Zr9SxRBGMf9rf/FHwSLyKiEwjTEyjLJLNFCiV7UH677IXwPS8K00LQUKjRMRMwMteyNyFKUTETTCk1Kw9dSM70U9cnv4861d97prXFT0HxgWWd2dnb3szPPPNvlQQq3oyRLQEmWgJIsASVZAkqyBJRkCSjJElCSJeBhqtD+UrgND4+TRCXNWknhFliyb7ZWcpGeno/k5xdEFRVVWs1yvn0bo7CwSMrKytFq/l9Y8ro4reQiSrIxWDI2IyjJxvgrkkdHv1JOzjXy9fUnT88NvEcZ9XosFguZzQlOXxSuj2vgWoLp6WkqKiqh4OAw7tvLaxOFhh6hW7du0+TkD63VEn19/ZScnE4+Ptu5XVTUcWpsbKKFhQWtxRJol5Jy3nq/aB8Tc5pevHhFc3NzWivnSJfc3d1De/aE0q5dwVRWVkENDU28Rxn1OC4wKnlmZoZSU8/b9P3yZQPl5RWwpKmpKW4HmptbWNqJE/H0+PEzbpeWdoHWr99Cd+9WWUV//tzH9yXaoU/sExLSqLy8ktusxh9Jzsy8whd1tD169JQCA/fZCBISQkLCaWBgUKtdYmhomA4fPkaJiWncDhiV3Nv7iQIC9lJNTR2XnTE+PkHR0afozJmzNuIxKi9fvro48iP4fkBVVQ0/B2SvlT+SjKmz2qYXJCQUF9/RamyBNPSL/oFRyRADQdnZudYX5Yi2tnbauHEbPX9er9X8pqWllUOHOFZf/4rDA0KDfRhxFanhAlMU4rF3hDiOuAiMSoaEe/eqydt782JMPsjT/vv3ST6mB+ft2BFIra1tfK5+Qx2OiWfDSE9KOsfiY2NNfI+uxGE9/5Rk+37XsvCB/v4vfA5GIIRnZFyyWVRxnphpzjb9s83Pz9Pr129YMmTjJVRW3l9xtuj5K5LFSLXH6EhGvSPJAovlJy9SWAj37z+0mCV84Xrctz4sGWFkZJTy8wv55aWnX3RJtFTJeMigoAOGYzLSrNnZWa4ToIz6lSQL2tvf0tatO3kRA/Zx1ygIS0gTsb5gnVkNqZIRyzB1Xc0uhEhH7T986OZ70EvGtHa0OHV2vmPJdXVPuCyyC5Pp7LLc2R5n8RcDBQNGzI6VkCoZDA+PUGRkDE9hjCyke9XVD7itfZ4MEEIQWyFF5KmlpeX8gPgg0EvGfeGDAqNMpJKib1wT1xZ0dHRyaoYFUp9TFxbepLg4s7VPxF7kyLW1ddY+CwpucI6dm3v93/wYAWNj4/yF5++/m2Owsy8+gJGJGA15mOKIhfHxZurqes8vQC95YmKCBYivPWy4hrO+BweHOC8WX3LoOyIimjMUMZswYzC7RBvcQ3j40cVc/KF7Fz6FMZRkCSjJEmDJRv89WWEMlmz0lxGFMViy+o3PvahfqyWg/t+FBJRkt0P0C6oAuMNngcUdAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NCheck.Target>
+            </uix:NCheck>
+            <uix:NClick ClickType="Single" DisplayName="Click  Activity 'CheckmarkDeselect All'" sap:VirtualizedContainerService.HintSize="337.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ba678309-0ede-4328-9a97-f9a5755a9249" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.zillow.com/ny/?searchQueryState=%7B%22pagination%22%3A%7B%7D%2C%22usersSearchTerm%22%3A%22NY%22%2C%22mapBounds%22%3A%7B%22west%22%3A-77.06706689415617%2C%22east%22%3A-68.43181298790618%2C%22south%22%3A40.50833642201896%2C%22north%22%3A45.16922710594813%7D%2C%22regionSelection%22%3A%5B%7B%22regionId%22%3A43%2C%22regionType%22%3A2%7D%5D%2C%22isMapVisible%22%3Atrue%2C%22filterState%22%3A%7B%22sort%22%3A%7B%22value%22%3A%22globalrelevanceex%22%7D%2C%22ah%22%3A%7B%22value%22%3Atrue%7D%7D%2C%22isListVisible%22%3Atrue%2C%22mapZoom%22%3A7%7D" DesignTimeRectangle="980, 364, 142, 30" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'CheckmarkDeselect All'" FullSelectorArgument="&lt;webctrl parentid='home-type-form' tag='BUTTON' type='button' aaname='*Deselect All*' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='home-type-form' tag='BUTTON' type='button' aaname='*Deselect All*' class='StyledTextButton-c11n-8-81-1__sc-n1gfmh-0 eKkysX' check:text='CheckmarkDeselect All' /&gt;" Guid="e41b6a67-9271-42d4-b608-ed3b48b193d3" ImageBase64="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" InformativeScreenshot="e3ac14643f300ee93280fadbf1c468d2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='NY Real Estate - New York Homes For Sale | Zillow' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NCheck Action="Check" DisplayName="Check/Uncheck Activity 'unchecked'" sap:VirtualizedContainerService.HintSize="337.6,157.6" sap2010:WorkflowViewState.IdRef="NCheck_2" ScopeIdentifier="ba678309-0ede-4328-9a97-f9a5755a9249" Version="V3">
+              <uix:NCheck.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.zillow.com/ny/?searchQueryState=%7B%22pagination%22%3A%7B%7D%2C%22usersSearchTerm%22%3A%22NY%22%2C%22mapBounds%22%3A%7B%22west%22%3A-84.40529440625%2C%22east%22%3A-67.13478659375%2C%22south%22%3A37.94513147596847%2C%22north%22%3A47.28003248253321%7D%2C%22regionSelection%22%3A%5B%7B%22regionId%22%3A43%2C%22regionType%22%3A2%7D%5D%2C%22isMapVisible%22%3Atrue%2C%22filterState%22%3A%7B%22sort%22%3A%7B%22value%22%3A%22globalrelevanceex%22%7D%2C%22ah%22%3A%7B%22value%22%3Atrue%7D%2C%22sf%22%3A%7B%22value%22%3Afalse%7D%2C%22tow%22%3A%7B%22value%22%3Afalse%7D%2C%22mf%22%3A%7B%22value%22%3Afalse%7D%2C%22con%22%3A%7B%22value%22%3Afalse%7D%2C%22land%22%3A%7B%22value%22%3Afalse%7D%2C%22apa%22%3A%7B%22value%22%3Afalse%7D%2C%22manu%22%3A%7B%22value%22%3Afalse%7D%2C%22apco%22%3A%7B%22value%22%3Afalse%7D%7D%2C%22isListVisible%22%3Atrue%2C%22mapZoom%22%3A6%7D" DesignTimeRectangle="983, 429, 25, 25" DesignTimeScaleFactor="1.25" ElementType="CheckBox" FriendlyName="'Checkbox'" FullSelectorArgument="&lt;webctrl id='home-type_isSingleFamily' tag='INPUT' aaname='Houses ' /&gt;" FuzzySelectorArgument="&lt;webctrl id='home-type_isSingleFamily' tag='INPUT' aaname='Houses ' type='checkbox' class='StyledFormControl-c11n-8-81-1__sc-18qgis1-0 bLBrGo StyledCheckbox-c11n-8-81-1__sc-xbn46a-0 kmalBC srp__k6yi1m-2 ktnymC' /&gt;" Guid="798803fc-2cee-4239-8459-734be6ec0762" ImageBase64="" InformativeScreenshot="61f2e569bf78b3bf332235b41d3c7057.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='NY Real Estate - New York Homes For Sale | Zillow' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="1008, 424, 85, 30" ElementType="Text" FriendlyName="'unchecked'" FullSelectorArgument="&lt;webctrl parentid='home-type-form' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='home-type-form' tag='LABEL' type='' class='StyledLabel-c11n-8-81-1__sc-qq9hfi-0 iojJxU short-label' aaname='Houses ' check:innerText='Houses' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFkAAAAiCAYAAAA07nWtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAQiSURBVGhD7ZrrSxVBGIf9e/oQWERFFhRmIWaWSWaJFUpIqR/UD6FlhiZhVmg3hRKLMhE1Qy3NLngl0UQ0rdAsL3jNS6YnRX07v9ed057TOXrWOGPQPLCsMzs7u/vszDvvdnIjhctRkiWgJEtASZaAkiwBJVkCSrIElGQJKMkScGt+16L9qXAVbrmP8ulL91etqHAFLLmy8rVWdI6urs/k6elDBQXFWs2fjI2NU2BgCKWlpWs1/y8sOe9xgVZ0DiXZGCwZmxGUZGOsieTR0W+Unn6bduzwonXrNvIeZdTrMZlMFBsb5/BF4fq4Bq4lmJmZoZych+TnF8h9r1+/mQICjlF29gOamvqhtVqit7ePzp9Poi1bdnK748dPUX39W1pcXNRaLIF2CQnJlvtF+7CwM1RVVUvz8/NaK8dIl9zZ2UW+vgG0d68f5eUVUF3dW96jjHocFxiVPDs7SxcuJFv1XVNTRzdvZrKk6elpbgcaGppYWnh4FL148YrbJSZeog0btlFhYbFFdE9PL9+XaIc+sY+LS6T8/CJusxJ/JTk19Tpf1N5WUfGSvL0PWAkSEvz9g2hgYFCrXWJoaJiOHj1J8fGJ3A4YldxtzpL27NlPpaXlXHbExMQkhYaeppiYs1biMSqvXbthHvnBfD+guLiUnwOyV8tfScbUWWnTCxIS7t9/pNVYA2noF/0Do5IhBoKuXs2wvCh7tLS00qZN2+nNm2qt5jdNTc0cOsSx6upaDg8IDbZhxFmkhgtMUYjH3h7iOOIiMCoZEp48KSF3963mmHyYp/3371N8TA/O27XLm5qbW/hc/YY6HBPPhpF+7txFFh8REc336Ewc1vNPSbbtdzULH+jr6+dzMAIhPCXlitWiivPETHO06Z9tYWGBGhvfsWTIxksoKnq67GzRsyaSxUi1xehIRr09yQKT6ScvUlgIDx48Ys4S+rke960PS0YYGRmlW7ey+OUlJV12SrRUyXhIH59DhmMy0qy5uTmuE6CM+uUkC1pb35OHx25exIBt3DUKwhLSRKwvWGdWQqpkxDJMXWezCyHSXvtPnzr5HvSSMa3tLU7t7R9Ycnl5JZdFdhEdffaP3NkWR/EXAwUDRsyO5ZAqGQwPj1BISBhPYYwspHslJc+4rW2eDBBCEFshReSpubn5/ID4INBLxn3hgwKjTKSSom9cE9cWtLW1c2qGBVKfU2dl3aPIyFhLn4i9yJHLysotfWZm3uUcOyPjzr/5MQLGxyf4C8/Lax/HYEdffAAjEzEa8jDFEQujomKpo+MjvwC95MnJSRYgvvaw4RqO+h4cHOK8WHzJoe/g4FDOUMRswozB7BJtcA9BQSfMufhz1y58CmMoyRJQkiXAko3+e7LCGCzZ6C8jCmOwZPUbn2tRv1ZLQP2/CwkoyS6H6BdhOM/NgqyhqAAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NCheck.Target>
+            </uix:NCheck>
+            <uix:NClick ClickType="Single" DisplayName="Click  Activity 'Apply'" sap:VirtualizedContainerService.HintSize="337.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ba678309-0ede-4328-9a97-f9a5755a9249" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.zillow.com/ny/?searchQueryState=%7B%22pagination%22%3A%7B%7D%2C%22usersSearchTerm%22%3A%22NY%22%2C%22mapBounds%22%3A%7B%22west%22%3A-84.40529440625%2C%22east%22%3A-67.13478659375%2C%22south%22%3A37.94513147596847%2C%22north%22%3A47.28003248253321%7D%2C%22regionSelection%22%3A%5B%7B%22regionId%22%3A43%2C%22regionType%22%3A2%7D%5D%2C%22isMapVisible%22%3Atrue%2C%22filterState%22%3A%7B%22sort%22%3A%7B%22value%22%3A%22globalrelevanceex%22%7D%2C%22ah%22%3A%7B%22value%22%3Atrue%7D%2C%22sf%22%3A%7B%22value%22%3Afalse%7D%2C%22tow%22%3A%7B%22value%22%3Afalse%7D%2C%22mf%22%3A%7B%22value%22%3Afalse%7D%2C%22con%22%3A%7B%22value%22%3Afalse%7D%2C%22land%22%3A%7B%22value%22%3Afalse%7D%2C%22apa%22%3A%7B%22value%22%3Afalse%7D%2C%22manu%22%3A%7B%22value%22%3Afalse%7D%2C%22apco%22%3A%7B%22value%22%3Afalse%7D%7D%2C%22isListVisible%22%3Atrue%2C%22mapZoom%22%3A6%7D" DesignTimeRectangle="980, 913, 223, 55" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Apply'" FullSelectorArgument="&lt;webctrl aaname='Apply' parentid='home-type' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Apply' parentid='home-type' tag='BUTTON' type='' class='StyledButton-c11n-8-81-1__sc-wpcbcc-0 wAVuT' check:text='Apply' /&gt;" Guid="eb3aabad-aca5-429b-874d-7b67c18935c3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOMAAAA7CAYAAACJ4z0OAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAShSURBVHhe7Z0/axxHGIdVuPdn0Bcw5Cuo9EdQ6y62K5Uq3NidqqBSBENQY5I04dwJdwIjLIwxZwLhIIRwxhiOYMiFgJm87zHv6J29OUm2d3aW+PnBw93tzozEaZ6dP7ugrUAIGUWQkZCRZE3G47MQbj0K4cY9OfktAPSJeqV+qWfdZDLefxLCzb31BgCgX9Qz9c0nyaimIiLAcKhvfoRMMurQWaoAAPVQ7yxJRtaIAMOj3lmSjKWCAFAfCzICNMaCjACNsSAjQGMsyAjQGAsyAjTGgowAjbEgI0BjLMgI0BgLMgI0xoKMAI2xICNAYyzICNAYCzICNMaCjACNsSDj18iPISzi3z38HcJeqQwMhgUZB2LyV/yiY06flssNAjKOCgsyDoHv/JY/QtgulR0CZBwVFmQcgP3f4pcsWXyIbz6GcPigXL46yDgqLMg4AKf/xC9ZXg9fxPeS6el62b1f40nJ5HEId5+LOP/GAyLwXMTe7Uh89Pbi/IF8PpA2FvJ+Fak7fRnCN658ScbtZ/GzJrbjf8ad1/Gc5l0IO53z8PlYkLE2sjZcxu9Yp6ZbItg8fix1ai/jXM6nui5Lke+2q5NklMykTikLaTdNizeMjOmiITk/uWhf8WvecxHXn4Mvw4KMlTkQAS3WwX3HPv4uL+9l1Czfh/CTjI6T33MxvSxeRs3iT2lX6px0xNSRdlVng4x+Or26cMTjWz+4C0jL6fX/FAsy1kQ67blNFyVHsRNno9+rvE4mo0h7x507dGIvZxfHMxk7G0Ne/JlMkVfHN60ZO9LZVHVXfscULyn0ggUZK7Ita8IUEaY4TewIl8nY7fi+PRn1rD0v42Vy61R1dXyTjMKxG01LI/npLxdloR8syFgR37HDhxCmMn00/JRzIiOS1SnKY3gZnURexu6mUCa3lFsdv0RGfwFZjb5+jStryn1XFvrBgoy1kLWg9OVrxUuXySPS+ja3ZR2YYmIJXsbFm7zOp46M2dRa5DtyU9T5a1cOesOCjJXYcbcwrowbcTIZ5fhDt1lyrTXj+3yn9ZPWjBG/kTN39f0IDv1hQcZKeAmKI4pINo3nNbYWy2SULKWdSWE31a/dMhklC5ke6w5sdzc17dxeIWO2kWMRybm3WAcLMtag05k3jSh+pLPNGi/j0t3387nsPuOmOte5z+jxFxPN7Gy9DPSDBRkrkD2tIp16t1BG6T71ovfvumu8/Zfyams4eZ3JsY1P4EimMiIeyjRzaXX0CRw5dtUTOL49Zafzn3W790OhPyzIODKKGy5XkMnY2U39XLILhYza/t4l9IsFGUfGWGT001Qef6uLBRlHRksZH0pdfYzu3K8XN0xjoT8syDgyWsp4IuJlkXXnyc/lstAfFmQcGS1lTFNTkXAhbR58Xy4H/WJBRoDGWJARoDEWZARojAUZARpjQUaAxliQEaAxFmQEaIwFGQEaY0FGgMZYkBGgMZYk441764UAoC7qnSXJeOvRekEAqIt6Z0kyHp+FcHNvvTAA1EF9U+8sSUbN/ScICTAE6pn65pPJqFFTdehkDQnQP+qV+uVHRMuajISQNkFGQkaREP4DRenPHbdqoAgAAAAASUVORK5CYII=" InformativeScreenshot="1a16be1162853ff33a141924e79366a1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='NY Real Estate - New York Homes For Sale | Zillow' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Extract_DT]" DisplayName="Extract Data from the Website" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&lt;Column xsi:type='DataColumn' Name='Price' ReferenceName='Column0'&gt;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;Column xsi:type='DataColumn' Name='Beds' ReferenceName='Column1'&gt;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;Column xsi:type='DataColumn' Name='Bathroom' ReferenceName='Column2'&gt;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;Column xsi:type='DataColumn' Name='Sqft' ReferenceName='Column3'&gt;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;Column xsi:type='DataColumn' Name='Address' ReferenceName='Column4'&gt;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;Column xsi:type='DataColumn' Name='URL' ReferenceName='Column6'&gt;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;Column xsi:type='DataNextLink' /&gt;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='article' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='article' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='text'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='article' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' text='- House for sale' idx='1' /&gt;&lt;webctrl tag='ul' idx='1' /&gt;&lt;webctrl tag='li' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='text'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='article' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' text='- House for sale' idx='1' /&gt;&lt;webctrl tag='ul' idx='1' /&gt;&lt;webctrl tag='li' idx='2' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column3' attr='text'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='article' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' text='- House for sale' idx='1' /&gt;&lt;webctrl tag='ul' idx='1' /&gt;&lt;webctrl tag='li' idx='3' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column4' attr='text'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='article' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='address' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column6' attr='href'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='article' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='img' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="337.6,157.6" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="50" ScopeIdentifier="ba678309-0ede-4328-9a97-f9a5755a9249" Version="V3">
+              <uix:NExtractData.NextLink>
+                <uix:TargetAnchorable BrowserURL="https://www.zillow.com/ny/houses/?searchQueryState=%7B%22pagination%22%3A%7B%7D%2C%22usersSearchTerm%22%3A%22NY%22%2C%22mapBounds%22%3A%7B%22west%22%3A-84.40529440625%2C%22east%22%3A-67.13478659375%2C%22south%22%3A37.94513147596847%2C%22north%22%3A47.28003248253321%7D%2C%22regionSelection%22%3A%5B%7B%22regionId%22%3A43%2C%22regionType%22%3A2%7D%5D%2C%22isMapVisible%22%3Atrue%2C%22filterState%22%3A%7B%22sort%22%3A%7B%22value%22%3A%22globalrelevanceex%22%7D%2C%22ah%22%3A%7B%22value%22%3Atrue%7D%2C%22tow%22%3A%7B%22value%22%3Afalse%7D%2C%22mf%22%3A%7B%22value%22%3Afalse%7D%2C%22con%22%3A%7B%22value%22%3Afalse%7D%2C%22land%22%3A%7B%22value%22%3Afalse%7D%2C%22apa%22%3A%7B%22value%22%3Afalse%7D%2C%22manu%22%3A%7B%22value%22%3Afalse%7D%2C%22apco%22%3A%7B%22value%22%3Afalse%7D%7D%2C%22isListVisible%22%3Atrue%2C%22mapZoom%22%3A6%7D" DesignTimeRectangle="1670, 497, 55, 55" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Chevron Right'" FullSelectorArgument="&lt;webctrl aaname='Chevron Right' parentid='grid-search-results' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Chevron Right' parentid='grid-search-results' tag='A' type='' class='StyledButton-c11n-8-81-1__sc-wpcbcc-0 dUGAFg PaginationButton-c11n-8-81-1__sc-si2hz6-0 ihkDpv' check:text='Chevron Right' /&gt;" Guid="58a45a89-d4a7-472f-994e-0cd3456f6863" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADsAAAA7CAYAAADFJfKzAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADoSURBVGhD7daxDYMwFIRh5qHNDJTZgSpDUGUImkyBlDFQxiBr+EWHUiT0fmcd90vIEt0n7Ge6Ukqc5eniRBmrmrGqGauasaoZq5qxqhmrmrGqGauasapVx67rK8bxFtv2/r7hVR07DNfo+8u+ssHVsfP82LEtgFPObCvgtAHVAjgNi9jgVCxigtOxiAWmYNEvGPdwRjTsNN3/vm5GFOwRir+sjNKxLChKxTKhKA3LhqIUbAtQVB17vFNZUFQdC2ALUFQduyzPfRuzoShtQLWQsaoZq5qxqhmrmrGqGauasaoZq5qxmkV8ADOEoG4ELNGMAAAAAElFTkSuQmCC" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New York Single Family Homes For Sale - 17863 Homes | Zillow' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NExtractData.NextLink>
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="992, 462, 917, 7255" DesignTimeScaleFactor="1.25" ElementType="List" FriendlyName="'UL'" FullSelectorArgument="&lt;webctrl parentid='grid-search-results' tag='UL' /&gt;" Guid="54ac0aa1-58d9-4bb4-ba87-9279713cf7a5" InformativeScreenshot="cb4bee896889e404c187573dc277a875.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New York Single Family Homes For Sale - 17863 Homes | Zillow' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAVhSURBVFhHzVd7TJVlHH7O+YBzDndEUDNREPASBeJUZjpOiqJADAxcyqXkeuAcTStL1lrzkssaDK21tLY223Si/7jQlq2amVZLbVqYl8KwlsrCKbcQha/n/b6PzvHwcQBT17M9E7/393ue33v7vYC7gu9oYOnJKDjkHeR2/hypfHsg8I/wQuanM+HoOYBK+SbZxZ/rlW9i7L7BMgqIzvVDev1SzvokjeU76JBPcCxXiRGx9xTmkUDKzlFYJVfBLjf1M++jGFslv8zYcCXnnsAnCFiwKxYr5Q9ocqOfaX9eZ+wOJUfk/id4+0lI3WvlzD6j8C03I0/sZs4h5iZTw6ipDQNGniXrdjNyvyuiWIOb+HDYQI1nFC2hOSR4WQywvheGyu7NPFhXdEQHY69G9f8O+TK1NlEzlNqaiR7EYFC0hLnvTGXCLiZ3/CsyFDrkVvISl/4weYrfXLeMWt0fUXsyPYz9CxEfpleZUNG1EBW3DzOhxyXZE9t44M6j/O96LDn6PDkNWV9ZkH0kEaWtX3PcVaeH2l+gvCsFietMziK8A4DEqhBWXc6gsy4JA9MhX6TxAea8gvT9SZi10aSpOZHzfSrjzjDeuR0qzzCvhJ7BijeCJ3PmPcUcaHELdGcHBY/ynlcj/WAmHq8ZgVnr1QOrhzg7UHytUsnrr9VMzwJ6+7CASUFclrd1gvrYzNnugf1WGTL2PYb4NV4ImKC5eEBcxXiUXNvGfNGu++uWd71Fby6BWkCtTlAjl6oWK66kIWbZWERl8pCO09Q9YHIhkFaXgJLWOuZ36eiqLO96Q6+A2+R52G6tR2nbDPb1YIRN05Q1SCYDKcG6w4InD5nhE2hQvhvYb2LzjCi5Mpfb9DnNPTeuOwqwdVfDxhkXddK4JQ5Ty/wQOFHRVWCQ+B6MMGJKpS/yLkxB/i8rUfTXchT8FgBTiDoenSsxdz6Nv6WBmIi+sRizy5303EBvfyAwiqJn5sF6NgHmF8w0Umcj4B8heoMXopaEo7hlHso63+dB/AlFza9irDWM5gbFPDJLQlnbAgofp4H7Fe5lTht5mTyNopbdnMSLWNbwKL2ZDK6g5GOEkUvbh6AY0MDEwFguVT6rFW+/EGnBs02vYdxCUaUaG5ltRFmHleMnXExvM/YqD++PvPv7seTYOvaIZOQcDeU2eStbKPlQwGmpIjBSLKUvnvpmBpPXUugYqe6lgy9hYeNGjE+nOSFWKToHKG2fw/HjnL3MnN/Jw+S7yPqyEIvqJmHONklZJY8Qb3f8GjPSPk7mAdpMsdMUdTYQu9yO/HM1mJARpmWwAIMB+Y0JLGw3nuNrWXDxTfaGXDICs2sAv4e1wMFgCZf4dk9j1bUU03v5brKoD7Fo70NahorElyTYOpJRcj0XiWtjELHYfT094xGb+rslu5E/KnrX00iv/4sT+wnyzsVgdJKa2IeIVANillr4r/ZhEIxKMmBx3Vik1i0m12JFcwZCppr7+sBWHfNemp9CQeN0jHTrBZ5gYGuWTEZ4+3vRKICHbwa5Gnnn93CVfyCbyBuw3Xzd2Qd0O2HvVRQ0ZSE0brATBJgC1T5hHmHBzA1hKLiwgL1iC/v9MW7rH8oBtrut8ACd0DVgE0bGM2AAmEN5a9isxiT5Y/mRcbzfqWQ1807TrJUUb4D7S+iqP0gBtu4tiMoO1uycEM1pzGxvpNRF8Ao+oSxlZa9oQJ2k6IADm7py0ALEb8Cl7aswMYdPJqH+XRCItPok7uFqjh8kW13ih8chFCDu/5+8Zk+zR4Rj/s5MXset/PazbuxwOaQCVP7KGe/jQbqkM3b3HEYB94f/1wLECX4Q1AqYFPAP8wViHklbMU4AAAAASUVORK5CYII=" InformativeScreenshot="24cd889b7c5246aab627373a72ade52f.jpg" Selector="&lt;html app='chrome.exe' title='Zillow: Real Estate, Apartments, Mortgages &amp;amp; Home Values' /&gt;" Url="https://www.zillow.com/" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+    <ui:FilterDataTable DataTable="[Extract_DT]" DisplayName="Creating a Filter Data Table" FilterRowsMode="Remove" sap:VirtualizedContainerService.HintSize="784,162.4" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[Filtered_DT]" SelectColumnsMode="Keep">
+      <ui:FilterDataTable.Filters>
+        <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="8">
+          <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="EMPTY">
+            <ui:FilterOperationArgument.Column>
+              <InArgument x:TypeArguments="x:String">["Price"]</InArgument>
+            </ui:FilterOperationArgument.Column>
+          </ui:FilterOperationArgument>
+          <ui:FilterOperationArgument BooleanOperator="Or" Operator="LT">
+            <ui:FilterOperationArgument.Column>
+              <InArgument x:TypeArguments="x:String">["Beds"]</InArgument>
+            </ui:FilterOperationArgument.Column>
+            <ui:FilterOperationArgument.Operand>
+              <InArgument x:TypeArguments="x:Int32">[1]</InArgument>
+            </ui:FilterOperationArgument.Operand>
+          </ui:FilterOperationArgument>
+          <ui:FilterOperationArgument BooleanOperator="Or" Operator="LT">
+            <ui:FilterOperationArgument.Column>
+              <InArgument x:TypeArguments="x:String">["Bathroom"]</InArgument>
+            </ui:FilterOperationArgument.Column>
+            <ui:FilterOperationArgument.Operand>
+              <InArgument x:TypeArguments="x:Int32">[1]</InArgument>
+            </ui:FilterOperationArgument.Operand>
+          </ui:FilterOperationArgument>
+          <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="Or" Operator="EMPTY">
+            <ui:FilterOperationArgument.Column>
+              <InArgument x:TypeArguments="x:String">["Sqft"]</InArgument>
+            </ui:FilterOperationArgument.Column>
+          </ui:FilterOperationArgument>
+          <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="Or" Operator="EMPTY">
+            <ui:FilterOperationArgument.Column>
+              <InArgument x:TypeArguments="x:String">["Address"]</InArgument>
+            </ui:FilterOperationArgument.Column>
+          </ui:FilterOperationArgument>
+          <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="Or" Operator="EMPTY">
+            <ui:FilterOperationArgument.Column>
+              <InArgument x:TypeArguments="x:String">["URL"]</InArgument>
+            </ui:FilterOperationArgument.Column>
+          </ui:FilterOperationArgument>
+        </scg:List>
+      </ui:FilterDataTable.Filters>
+      <ui:FilterDataTable.SelectColumns>
+        <scg:List x:TypeArguments="InArgument" Capacity="4">
+          <x:Null />
+        </scg:List>
+      </ui:FilterDataTable.SelectColumns>
+    </ui:FilterDataTable>
+    <ui:OutputDataTable DataTable="[Filtered_DT]" DisplayName="Output Data from Filetered table" sap:VirtualizedContainerService.HintSize="784,80.8" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[StringDT]" />
+    <WriteLine DisplayName="Write Line to get the Data from the table" sap:VirtualizedContainerService.HintSize="784,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[StringDT]" />
+    <WriteLine DisplayName="Write Line to get the count of rows" sap:VirtualizedContainerService.HintSize="784,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[Extract_DT.RowCount.ToString]" />
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" DisplayName="Excel Process" sap:VirtualizedContainerService.HintSize="784,3453.6" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1" ShowExcelWindow="True">
+      <ueab:ExcelProcessScopeX.Body>
+        <ActivityAction x:TypeArguments="ui:IExcelProcess">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Process to Create an Excel file" sap:VirtualizedContainerService.HintSize="750.4,3367.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelApplicationCard Password="{x:Null}" DisplayName="Creating an Excel File" sap:VirtualizedContainerService.HintSize="688,3255.2" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ReadFormatting="DisplayValue" ResizeWindow="Maximize" WorkbookPath="PropertyListings.xlsx">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Process in Excel Sheet" sap:VirtualizedContainerService.HintSize="654.4,2985.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:DeleteSheetX DisplayName="Delete Old Sheet" sap:VirtualizedContainerService.HintSize="592,90.4" sap2010:WorkflowViewState.IdRef="DeleteSheetX_1" Sheet="[Excel.Sheet(Location.ToUpper)]" />
+                    <ueab:WriteRangeX Destination="[Excel.Sheet(Location.ToUpper)]" DisplayName="Write Data into the Excel sheet" sap:VirtualizedContainerService.HintSize="592,160" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="True" Source="[Filtered_DT]" />
+                    <ueab:InsertColumnX DisplayName="Inserting a new Column called Street Address" HasHeaders="True" sap:VirtualizedContainerService.HintSize="592,210.4" sap2010:WorkflowViewState.IdRef="InsertColumnX_2" NewColumnName="Street Address" Range="[Excel.Sheet(Location.ToUpper)]" RelativeColumnName="Address" RelativePosition="After">
+                      <ueab:InsertColumnX.ColumnFormat>
+                        <ueab:TextFormat />
+                      </ueab:InsertColumnX.ColumnFormat>
+                    </ueab:InsertColumnX>
+                    <ueab:InsertColumnX DisplayName="Inserting a new Column called City" HasHeaders="True" sap:VirtualizedContainerService.HintSize="592,210.4" sap2010:WorkflowViewState.IdRef="InsertColumnX_3" NewColumnName="City" Range="[Excel.Sheet(Location.ToUpper)]" RelativeColumnName="Street Address" RelativePosition="After">
+                      <ueab:InsertColumnX.ColumnFormat>
+                        <ueab:TextFormat />
+                      </ueab:InsertColumnX.ColumnFormat>
+                    </ueab:InsertColumnX>
+                    <ueab:InsertColumnX DisplayName="Inserting a new Column called Zip Code" HasHeaders="True" sap:VirtualizedContainerService.HintSize="592,210.4" sap2010:WorkflowViewState.IdRef="InsertColumnX_4" NewColumnName="Zip Code" Range="[Excel.Sheet(Location.ToUpper)]" RelativeColumnName="City" RelativePosition="After">
+                      <ueab:InsertColumnX.ColumnFormat>
+                        <ueab:NumberFormat DecimalPlaces="0" UseThousandSeparator="False" />
+                      </ueab:InsertColumnX.ColumnFormat>
+                    </ueab:InsertColumnX>
+                    <ueab:ExcelForEachRowX DisplayName="For Adding new Rows in Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="592,968" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_1" Range="[Excel.Sheet(Location.ToUpper)]" SaveAfterEachRow="True">
+                      <ueab:ExcelForEachRowX.Body>
+                        <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                          <ActivityAction.Argument1>
+                            <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                          </ActivityAction.Argument1>
+                          <ActivityAction.Argument2>
+                            <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                          </ActivityAction.Argument2>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="558.4,784" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Sequence sap:VirtualizedContainerService.HintSize="496,672" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:WriteCellX Cell="[CurrentRow(&quot;Street Address&quot;)]" DisplayName="Write Street Address in Cell" sap:VirtualizedContainerService.HintSize="433.6,160" sap2010:WorkflowViewState.IdRef="WriteCellX_1" Value="[CurrentRow(&quot;Address&quot;).ToString.Split(&quot;,&quot;c)(0)]" />
+                              <ueab:WriteCellX AutoIncrementRow="True" Cell="[CurrentRow(&quot;City&quot;)]" DisplayName="Write City in Cell" sap:VirtualizedContainerService.HintSize="433.6,160" sap2010:WorkflowViewState.IdRef="WriteCellX_2" Value="[CurrentRow(&quot;Address&quot;).ToString.Split(&quot;,&quot;c)(1).Trim]" />
+                              <ueab:WriteCellX Cell="[CurrentRow(&quot;Zip Code&quot;)]" DisplayName="Write Zip code in Cell" sap:VirtualizedContainerService.HintSize="433.6,160" sap2010:WorkflowViewState.IdRef="WriteCellX_3" Value="[CurrentRow(&quot;Address&quot;).ToString.Split(&quot;,&quot;c)(2).Trim.Split(&quot; &quot;c).Last]" />
+                            </Sequence>
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelForEachRowX.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ueab:ExcelForEachRowX>
+                    <ueab:FormatRangeX DisplayName="Format the Zip Code Cells" sap:VirtualizedContainerService.HintSize="592,139.2" sap2010:WorkflowViewState.IdRef="FormatRangeX_1" Range="[Excel.Sheet(Location.ToUpper).Range(&quot;H:H&quot;)]">
+                      <ueab:FormatRangeX.Alignment>
+                        <ui:AlignmentOptions HorizontalAlignment="xlHAlignGeneral" VerticalAlignment="xlVAlignBottom" WrapText="False" />
+                      </ueab:FormatRangeX.Alignment>
+                      <ueab:FormatRangeX.Font>
+                        <ui:FontOptions Color="Black" FillColor="Transparent" FontFamilyName="Calibri" Size="11" Style="Regular" UnderlineStyle="None" />
+                      </ueab:FormatRangeX.Font>
+                      <ueab:FormatRangeX.Format>
+                        <ueab:NumberFormat DecimalPlaces="0" UseThousandSeparator="False" />
+                      </ueab:FormatRangeX.Format>
+                    </ueab:FormatRangeX>
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="592,352" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,273.6" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ueab:DeleteColumnX ColumnName="Address" DisplayName="Delete  Address Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="433.6,161.6" sap2010:WorkflowViewState.IdRef="DeleteColumnX_1" Range="[Excel.Sheet(Location.ToUpper)]" />
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                    </ui:CommentOut>
+                    <ueab:SortX DisplayName="Sort Range by Price" HasHeaders="True" sap:VirtualizedContainerService.HintSize="592,212.8" sap2010:WorkflowViewState.IdRef="SortX_1" Range="[Excel.Sheet(Location.ToUpper)]">
+                      <ueab:SortX.Body>
+                        <ActivityAction>
+                          <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ueab:SortColumnX ColumnName="Price" DisplayName="Sort By Column" sap:VirtualizedContainerService.HintSize="382.4,62.4" sap2010:WorkflowViewState.IdRef="SortColumnX_1" SortDirection="Ascending" />
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:SortX.Body>
+                    </ueab:SortX>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelProcessScopeX.Body>
+    </ueab:ExcelProcessScopeX>
+  </Sequence>
+</Activity>
